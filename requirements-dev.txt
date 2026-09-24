@@ -1,0 +1,5 @@
+# Test-only dependencies -- not needed to run the application, only to run
+# the test suite. Kept separate from requirements.txt so production images
+# don't carry test tooling.
+-r requirements.txt
+reportlab==4.2.5
