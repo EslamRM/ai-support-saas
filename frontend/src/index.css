@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/*
+Design tokens for the admin console. This is an internal ops tool for
+support-team staff monitoring an AI support bot -- built for density and
+fast scanning, not marketing polish (see docs/architecture.md Phase 8:
+"engineering quality, not visual design"). A cool neutral base with one
+deliberate accent (deep teal, not the more common warm-terracotta or
+near-black-plus-neon defaults), one type family used consistently for
+both headings and body text.
+*/
+:root {
+  --color-bg: #f6f7f9;
+  --color-surface: #ffffff;
+  --color-border: #e2e5ea;
+  --color-text: #1a2026;
+  --color-text-muted: #5b6470;
+  --color-accent: #0f6b66;
+  --color-accent-hover: #0b5450;
+  --color-accent-soft: #e6f1f0;
+  --color-danger: #b3261e;
+  --color-danger-soft: #fbeae9;
+  --color-warning: #9a6700;
+  --color-warning-soft: #fdf3e0;
+}
+
+body {
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+code,
+.font-mono {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
